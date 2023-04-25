@@ -1,0 +1,85 @@
+
+.category{
+    border-color: white;
+    border-width: 1px 4px 1px 4px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color:rgba(0, 160, 227, .4);
+
+}
+.category:hover{
+    background-color:rgba(0, 123, 227, .5);
+
+}
+
+
+
+.cat-name{
+    color:white;
+    text-decoration: none;
+}
+.cat-name:hover{
+    color:white;
+    text-decoration: none;
+}
+
+
+
+
+.cat-block{
+    width:100%;
+    margin-top:20px;
+    padding-top:20px;
+
+	height:540px;
+	background-size:cover;
+	background-position:top center;
+}
+.cat-but{
+    background:#00a0e3;
+    border: none;
+    font-weight:bold;
+    border-radius:16px;
+    color: white;
+    text-transform:uppercase;
+}
+
+.cat-but:focus{
+        outline: none;
+        border: none;
+}
+
+.cat-but:hover{
+    background:#007be3;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.loop-stage{
+    height:80px;
+    width:80px;
+    border-radius:40px;
+    box-shadow: inset 0px 0px 7px rgba(0,0,0,0.1), 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    border:3px solid #eee;
+    color:#00a0e3;
+    font-weight: bold;
+    font-size: 200%;
+    background: white;
+}
+
+.loop-stage:hover{
+    background:#00a0e3;
+    color:white;
+}
+.stage-name{
+     font-weight: bold;
+     font-size: 150%;
+      color:#00a0e3;
+}
+.stage-name:hover{
+    outline: none;
+    color:#00a0e3;
+}
+.icon{
+    height:25px;
+    margin-right: 4px;
+}

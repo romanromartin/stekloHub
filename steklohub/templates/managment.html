@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+{% load static %}
+{% load i18n %}
+
+
+{% block title %}
+  <title>Argo outdoor</title>
+{% endblock %}
+
+<link rel="icon" href="data:;base64,=">
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
+
+</head>
+<body  >
+
+<!---------------------Header------------------------->
+<div class=" fixed-top  "  style="background: white;">
+  <div class="container">
+    <div class="row py-3  ">
+        <div class="col-lg-3  "  >
+
+      </div>
+      <div class="col-lg-6   " >
+        <a  href="{% url 'index' %}" >
+          <img class="" style="height:50px;" src="{% static 'css/logo.png' %}" alt="Logo" >
+        </a>
+      </div>
+
+      <div class="col-lg-3 row px-0 " >
+            <a  style="line-height: 100%;" >+7-931-216-22-70 <br>
+                +7-931-216-22-70 <br>
+                steklohab@
+
+            </a>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br><br><br><br><br><br><br><br>
+
+
+<div    >
+        <form method="post" >
+            {% csrf_token %}
+                <input   type="submit" name="peregor" value="Обновить перегородки" >
+                <input   type="submit" name="kozirki" value="Обновить козырьки" >
+                <input   type="submit" name="Nerjograda" value="Перила из нержи" >
+                <input   type="submit" name="Stekloograda" value="Перила из стекла" >
+                <input   type="submit" name="interer" value="Обновить элементы интерьера" >
+
+
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

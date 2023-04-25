@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+{% load static %}
+{% load i18n %}
+
+
+{% block title %}
+  <title>СтеклоХаб</title>
+
+{% endblock %}
+
+
+    <link rel="icon" type="image/vnd.microsoft.icon" href="{% static 'css/favicon.ico' %}" />
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
+
+
+
+</head>
+<body  >
+
+<!---------------------Header------------------------->
+<div class=" fixed-top  "  style="background: white;">
+  <div class="container">
+    <div class="row py-3  ">
+        <div class="col-lg-3  "  >
+
+      </div>
+      <div class="col-lg-6   " >
+        <a  href="{% url 'index' %}" >
+          <img class="" style="height:50px;" src="{% static 'css/logo.png' %}" alt="Logo" >
+        </a>
+      </div>
+
+      <div class="col-lg-3 row px-0 " >
+            <a  style="line-height: 100%;" >+7-931-216-22-70 <br>
+                +7-931-216-22-70 <br>
+                steklohab@mail.ru
+
+            </a>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-----------------------------------------  index----------------->
+<div style="width:100%;
+	            height:580px;
+	            background-size:cover;
+	            background-position:top center;
+                background-image:url({% static 'css/bg2.jpg' %})
+                " >
+    <div class=" container" >
+        <div class=" row justify-content-center" style="color:white;">
+            <div class="col-12 text-center pb-4 " style="padding-top:200px; ">
+                <h1 style=" text-transform:uppercase; font-size: 300%; font-weight:bold; color:white; " >Изготовление и монтаж светопрозрачных конструкций</h1>
+            </div>
+            <div class=" col-3 text-center " >
+                <a href="#Peregorodki" class="cat-name">
+                   <div class="category">
+                    <h4  >Цельностеклянные <br> перегородки</h4>
+                    </div>
+                </a>
+            </div>
+            <div class=" col-3 text-center " >
+                <a href="#kozirki" class="cat-name">
+                    <div class="category">
+                        <h4  >Стеклянные <br> козырьки</h4>
+                    </div>
+                </a>
+            </div>
+            <div class=" col-3 text-center" >
+                <a href="#Nerjograda" class="cat-name">
+                    <div class="category" >
+                      <h4  >Нержавеющие <br> ограждения</h4>
+                    </div>
+                </a>
+            </div>
+            <div class=" col-3 text-center " >
+                <a href="#Stekloograda" class="cat-name">
+                    <div class="category">
+                        <h4  >Стеклянные <br> ограждения</h4>
+                    </div>
+                </a>
+            </div>
+            <div class=" mt-3 ">
+                <a href="#Interior" class="cat-name">
+
+                    <div class="category py-2  ">
+                        <img class="d-inline px-2" style="height:50px;" src="{% static 'css/fur1.png' %}" alt="Furniture" >
+                        <h4 class="d-inline"   >Элементы декора для интерьера</h4>
+                        <img class="d-inline px-2" style="height:50px; " src="{% static 'css/fur2.png' %}" alt="Furniture" >
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------------------  loop----------------->
+<div style="width:100%; margin-top:20px;
+	            height:580px;
+	            background-size:cover;
+	            background-position:top center;
+                background-image:url({% static 'css/bg3.jpg' %})
+                " >
+    <div class=" container" >
+        <div class=" row justify-content-center" style="color:back;">
+            <div class="col-12 text-center pb-4 " style="padding-top:40px; ">
+                <h1 style=" text-transform:uppercase; font-size: 200%;  " >
+                    Осуществляем полный цикл работ от разработки чертежей
+                        до установки конструкций</h1>
+            </div>
+            <div class="col-3 text-center px-0" >
+                            <input class="loop-stage"   type="submit" name="1" value="1" >
+                            <p class="stage-name"  > Замер </p>
+            </div>
+            <div class="col-3 text-center px-0" >
+                        <input class="loop-stage"   type="submit" name="2" value="2" >
+                        <p class="stage-name"  > Договор </p>
+            </div>
+            <div class="col-3 text-center px-0" >
+                        <input  class="loop-stage" type="submit" name="3" value="3" >
+                        <p class="stage-name"  > Изготовление </p>
+            </div>
+            <div class="col-3 text-center px-0" >
+                        <input  class="loop-stage" type="submit" name="4" value="4" >
+                        <p class="stage-name"  > Монтаж </p>
+            </div>
+            <div class="col-5">
+                <img class=" " style="width:100%;"  src="{% static 'css/loop1.jpg' %}" alt="Furniture" >
+            </div>
+            <div class="col-7">
+                <h1> <span style="color:#00a0e3; font-size: 200%;  " > 1 </span>   Замер</h1>
+                <p>Наш специалист приедет к вам для замера,
+                    на месте проконсультирует и предложит несколько оптимальных
+                    для вас вариантов конструкций.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!----------------------------------------- Peregorodki----------------->
+<div class="cat-block" style="background-image:url({% static 'css/bg4.jpg' %})"  >
+    <div class=" container" >
+        <div class=" row justify-content-center " style="color:back;">
+            <div class="col-6">
+                <div class="fotorama mx-auto  "  data-transition="crossfade" data-autoplay="true"
+                     data-clicktransition="crossfade" data-nav="thumbs" style=" margin:10px; height: auto; width: 100%; " >
+                    {% for im in per %}
+                    <img src=" /{{ im.picture }} " alt="Card image"  >
+                    {% endfor %}
+                </div>
+            </div >
+            <div class="col-6" >
+                <h2 style=" text-transform:uppercase;" >Цельностеклянные перегородки</h2>
+                <br>
+                <ul style="font-weight:bold; line-height: 200%; font-size:120%; ">
+                    <li>высота остекления до 5000 мм</li>
+                    <li>толщина стекла от 8 мм до 12 мм</li>
+                    <li>зажимной профиль высотой 40 мм, 55 мм, 76 мм, 100 мм</li>
+                    <li>опорный профиль высотой 15 мм, 20 мм, 40 мм</li>
+                    <li>отделка профиля: анодировка, нержавеющая сталь, покраска по RAL</li>
+                </ul>
+                <br>
+                <button type="button" class="w-50  py-2 cat-but " data-toggle="modal"
+                  data-target="#CallModal"  id="kozirki" >
+                    рассчитать стоимость
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------- kozirki----------------->
+
+<div class="cat-block" style="background-image:url({% static 'css/bg5.jpg' %})" >
+    <div class=" container" >
+        <div class=" row justify-content-center " style="color:back;">
+            <div class="col-6" >
+                <h2 style=" text-transform:uppercase;" >Стеклянные козырьки</h2>
+                <br>
+                <ul style="font-weight:bold; line-height: 200%; font-size:120%; ">
+                    <li >заполнение: закаленный триплекс от 12 до 20 мм</li>
+                    <li > триплекс: прозрачный, с тонированной пленкой, с тонированным в массе стеклом</li>
+                    <li>исполнение крепежа: вантовое, на каркасе, на несущем профиле</li>
+                    <li>отделка крепежа: нержавеющая сталь, черный металл с порошковой покраской</li>
+                    <li>возможность установки на алюминиевый фасад</li>
+                </ul>
+                <br>
+                <button type="button" class="w-50  py-2 cat-but " data-toggle="modal" id="Nerjograda"
+                  data-target="#CallModal"  >
+                    рассчитать стоимость
+                </button>
+            </div>
+            <div class="col-6">
+                <div class="fotorama mx-auto  "  data-transition="crossfade" data-autoplay="true"
+                     data-clicktransition="crossfade" data-nav="thumbs" style=" margin:10px; height: auto; width: 100%; " >
+                    {% for im in koz %}
+                    <img src=" /{{ im.picture }} " alt="Card image"  >
+                    {% endfor %}
+                </div>
+            </div >
+        </div>
+    </div>
+</div>
+
+
+<!----------------------------------------- Nerjograda----------------->
+
+<div class="cat-block" style="background-image:url({% static 'css/bg6.jpg' %})" >
+    <div class=" container" >
+        <div class=" row justify-content-center " style="color:back;">
+            <div class="col-6">
+                <div class="fotorama mx-auto  "  data-transition="crossfade" data-autoplay="true"
+                     data-clicktransition="crossfade" data-nav="thumbs" style=" margin:10px; height: auto; width: 100%; " >
+                    {% for im in ner %}
+                    <img src=" /{{ im.picture }} " alt="Card image"  >
+                    {% endfor %}
+                </div>
+            </div >
+            <div class="col-6" >
+                <h2 style=" text-transform:uppercase;" >Нержавеющие ограждения</h2>
+                <br>
+                <ul style="font-weight:bold; line-height: 200%; font-size:120%; ">
+                    <li style="">высота ограждений до 1200 мм</li>
+                    <li >для использования внутри помещений и на улице</li>
+                    <li>специальные ограждения для детских садов и школ</li>
+                    <li>комбинированные ограждения со стеклом и ригелями</li>
+                    <li>стойки и перила круглого, квадратного или прямоугольного сечения</li>
+                </ul>
+                <br>
+                <button type="button" class="w-50  py-2 cat-but " data-toggle="modal" id="Stekloograda"
+                  data-target="#CallModal">
+                    рассчитать стоимость
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------- Stekloograda----------------->
+
+<div class="cat-block" style="background-image:url({% static 'css/bg7.jpg' %})" >
+    <div class=" container" >
+        <div class=" row justify-content-center " style="color:back;">
+
+            <div class="col-6" >
+                <h2 style=" text-transform:uppercase;" >Стеклянные ограждения</h2>
+                <br>
+                <ul style="font-weight:bold; line-height: 200%; font-size:120%; ">
+                    <li style="">высота остекления до 1500 мм</li>
+                    <li >заполнение: закаленный триплекс от 10 до 20 мм</li>
+                    <li>несущий профиль высотой 106 мм</li>
+                    <li>ограждения на мини стойках или точечном креплении</li>
+                    <li>поручень с пазом на стекло или с выносом от плоскости стекла</li>
+                </ul>
+                <br>
+                <button type="button" class="w-50  py-2 cat-but " data-toggle="modal" id="Interior"
+                  data-target="#CallModal">
+                    рассчитать стоимость
+                </button>
+            </div>
+            <div class="col-6">
+                <div class="fotorama mx-auto  "  data-transition="crossfade" data-autoplay="true"
+                     data-clicktransition="crossfade" data-nav="thumbs" style=" margin:10px; height: auto; width: 100%; " >
+                    {% for im in stek %}
+                    <img src=" /{{ im.picture }} " alt="Card image"  >
+                    {% endfor %}
+                </div>
+            </div >
+        </div>
+    </div>
+</div>
+
+
+<!----------------------------------------- Interior----------------->
+
+<div class="cat-block" style="background-image:url({% static 'css/bg8.jpg' %}); height:82vh;  " >
+    <div class=" container" >
+        <div class=" row justify-content-center " style="color:back;">
+
+            <div class="col-12 text-center" >
+                <h2 style=" text-transform:uppercase;" >Элементы декора для интерьера</h2>
+            </div>
+
+            <div class="col-12 text-center">
+                <div class="fotorama mx-auto  "  data-transition="crossfade" data-autoplay="true"
+                     data-clicktransition="crossfade" data-nav="thumbs" style=" margin:10px; height: auto; width: 100%; " >
+                    {% for im in inter %}
+                    <img src=" /{{ im.picture }} " alt="Card image"  >
+                    {% endfor %}
+                </div>
+                <button type="button" class="w-50  py-2 cat-but " data-toggle="modal"
+                  data-target="#CallModal">
+                    заказать элементы декора
+                </button>
+            </div >
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-------------------------------------------------  Contacts------------------->
+<div style=" background-color:none; padding-bottom:50px;" id="contacts" >
+    <div class="container " >
+        <div class="row text-center justify-content-center"  >
+           <div class="col-10 index-box px-4 text-center" style=" margin-top:70px; " >
+                <h1 class="index-title">Контакты:</h1>
+
+                    <a style="font-size: 150%;">
+                        г. Санкт-Петербург, ул. ХЗ, д. ХЗ <br>
+                        <img class="icon " src="{% static 'css/mail.svg' %}" alt="Phone">
+                      print-argo.msk@mail.ru
+                        <br>  <br>
+                      <img class="icon  " src="{% static 'css/phone.svg' %}" alt="Phone">
+                      Андрей +7-931-216-22-70 <br>
+                      <img class="icon" src="{% static 'css/phone.svg' %}" alt="Phone">
+                      Виталий +7-931-624-51-97 <br>
+                        <img class="icon" src="{% static 'css/phone.svg' %}" alt="Phone">
+                      Виталий +7-921-962-38-96 <br>
+                        <img class="icon" src="{% static 'css/phone.svg' %}" alt="Phone">
+                      Виктор +7-952-357-75-01 <br>
+                        <img class="icon" src="{% static 'css/phone.svg' %}" alt="Phone">
+                      Антон +7-952-366-76-04 <br>
+                        <img class="icon" src="{% static 'css/phone.svg' %}" alt="Phone">
+                      Григорий +7-996-770-69-31 <br>
+
+                    </a>
+                    <br>
+                    <div class="col-12  mt-4 " id="map" style=" height: 500px; border:5px solid #f99b37; padding:0px;"></div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="header py-4 " style="background: #00823C;" >
+  <div class="container">
+    <div class="row  ">
+      <div class="col-lg-5  text-center pt-1 " >
+        <a  href="{% url 'index' %}" >
+
+        </a>
+      </div>
+      <div class="col-lg-7  text-center py-3 " >
+        <a class="mr-3  "  href="#price" >ЦЕНЫ</a>
+        <a class="mr-3"   href="#portfolio" >ПРИМЕРЫ РАБОТ</a>
+
+        <a  class="mr-3"  href="#contacts" >КОНТАКТЫ</a>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!------------------------------- Модальное окно call --------------------------------------->
+<div class="modal fade" id="CallModal" tabindex="-1" aria-labelledby="CallModalLabel"
+     aria-hidden="true"  >
+  <div class="modal-dialog" style="max-width:700px;" >
+    <div class="modal-content" style="background-image:url({% static 'css/bg5.jpg' %});">
+         <form method="post"  >
+                        {% csrf_token %}
+              <div class="modal-body row mx-1 text-center justify-content-center">
+                        <h4 class=" mt-3  col-12 " > Ваше имя </h4>
+
+                        <div class="col-12 ">
+                            <input style="border: none; border-radius:6px; text-align:center;" type="text" name="name">
+                        </div>
+
+                        <div  class="align-center col-12" >
+                            <input class="mt-1"  type="checkbox" name="polit"  checked>
+                            <a style="color:#777;"   >Согласие с политикой конфиденциальности </a>
+                        </div>
+                        <h4 class="text-center mt-2  col-12 "> Ваш номер телефона </h4>
+                        <div class="align-center col-12" >
+                            <a class="repair-text">+7  </a>
+                            <input style="border: none; border-radius:6px; text-align:center;"  min="9000000000"  max="9999999999" type="number" name="phone"
+                            >
+                        </div>
+                        <div class="col-12">
+                            <input class=" text-center py-1 w-50 align-self-center"  type="submit" name="contact" style=" margin-top:16px;
+                            background-color:rgba(0, 160, 227, .9); border: none;
+                             border-radius:16px; color: white;   ">
+                        </div>
+                        <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true" style="color:#fd4539; position:absolute; top:20px; right:20px; font-size: 200%;  ">&times;</span>
+                            </button>
+
+
+              </div>
+             </form>
+      <div class="modal-footer justify-content-center ">
+        <button type="button" class="w-50 py-1 mb-3 " data-dismiss="modal"
+                style="background-color:rgba(0, 160, 227, .9); border: none;
+                border-radius:16px; color: white; ">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
